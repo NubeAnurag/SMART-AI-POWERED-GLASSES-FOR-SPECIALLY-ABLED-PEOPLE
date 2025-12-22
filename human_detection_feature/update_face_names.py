@@ -1,6 +1,28 @@
 #!/usr/bin/env python3
 """
-Script to update face encodings with proper names
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Name Updater
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Utility script to update face encodings with proper names
+- Syncs face encodings with known persons database from config.py
+- Ensures consistency between face encodings and person information
+- Updates pickle files with correct name mappings
+
+PURPOSE:
+This utility helps maintain consistency between the face encodings database
+and the known persons configuration. Run this if you've updated the
+KNOWN_PERSONS dictionary in config.py.
+
+USAGE:
+    python3 update_face_names.py
+
+This ensures face recognition works correctly with updated person information.
+
+Author: DRDO Project
+===============================================================================
 """
 
 import pickle

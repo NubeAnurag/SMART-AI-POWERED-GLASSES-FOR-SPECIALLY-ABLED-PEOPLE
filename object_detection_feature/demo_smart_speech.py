@@ -1,6 +1,28 @@
 #!/usr/bin/env python3
 """
-Demo script showing smart speech capabilities
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Smart Speech Demo
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Demonstration script for smart speech capabilities
+- Shows how the SmartObjectDetector creates natural language descriptions
+- Demonstrates environment understanding and object relationship analysis
+- Examples of how detected objects are described in natural speech
+
+PURPOSE:
+This is a demo/example script that shows how to use the SmartObjectDetector
+with its advanced speech capabilities. Useful for understanding how the
+environment understanding feature works.
+
+USAGE:
+    python3 demo_smart_speech.py
+
+This demonstrates the advanced speech and environment understanding features.
+
+Author: DRDO Project
+===============================================================================
 """
 
 from smart_detector import SmartObjectDetector

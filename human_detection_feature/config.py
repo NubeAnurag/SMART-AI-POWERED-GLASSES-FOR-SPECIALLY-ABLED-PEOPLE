@@ -1,3 +1,29 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Configuration
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Contains all configuration settings for the human detection system
+- Defines known persons database with names, ages, genders, descriptions
+- System configuration: camera index, face detection confidence, FPS display
+- Display settings: window title, colors, font settings, line thickness
+- Emotion display mappings for better visualization
+
+CONFIGURATION SECTIONS:
+- KNOWN_PERSONS: Predefined database of known persons
+- SYSTEM_CONFIG: Camera settings, detection thresholds, system behavior
+- DISPLAY_CONFIG: UI appearance settings (colors, fonts, window title)
+- EMOTION_DISPLAY: Emotion emoji mappings for visual feedback
+
+This file centralizes all configuration, making it easy to modify system
+behavior without changing the main code.
+
+Author: DRDO Project
+===============================================================================
+"""
 # Configuration file for Human Detection and Identification System
 
 # Known persons database with hardcoded names and ages

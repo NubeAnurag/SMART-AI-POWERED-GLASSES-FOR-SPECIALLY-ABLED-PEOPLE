@@ -1,3 +1,59 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Advanced Smart Detector
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Advanced YOLOv8 object detection with environment understanding
+- Real-time detection with temporal smoothing to reduce flickering
+- Object relationship analysis (person holding phone, sitting on chair, etc.)
+- Confidence boosting for common objects
+- Spatial relationship detection (holding, sitting, using, wearing, etc.)
+- Natural speech generation based on object relationships
+- Multiple model size support (n, s, m, l, x)
+- IoU-based overlapping detection filtering
+- Configurable confidence thresholds and NMS settings
+
+KEY CLASS: SmartObjectDetector
+
+KEY FEATURES:
+- Environment Understanding: Analyzes relationships between objects
+- Temporal Smoothing: Reduces false positives with frame history
+- Confidence Boosting: Improves detection for common objects
+- Relationship Detection: Identifies spatial relationships (holding, near, on)
+- Natural Speech: Generates human-like descriptions of the scene
+- Performance Optimization: Configurable model sizes for speed/accuracy tradeoff
+
+KEY METHODS:
+- setup_environment_rules(): Defines object categories and relationships
+- analyze_object_relationships(): Detects spatial relationships
+- create_natural_speech(): Generates natural language descriptions
+- apply_temporal_smoothing(): Reduces flickering with frame history
+- apply_confidence_boost(): Improves common object detection
+- filter_overlapping_detections(): Removes duplicate detections using IoU
+
+CONTROLS:
+- 'q': Quit and return to main menu
+- 's': Save screenshot
+- 'p': Speak smart detection results
+- 'c': Change confidence threshold
+- 't': Toggle tracking
+- 'm': Toggle temporal smoothing
+- 'b': Toggle confidence boost
+
+OUTPUTS:
+- Real-time video with relationship lines and labels
+- Information panel showing system status
+- Natural language audio descriptions
+- Screenshot files
+
+This is the advanced version with environment understanding capabilities.
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 from ultralytics import YOLO

@@ -1,7 +1,38 @@
 #!/usr/bin/env python3
 """
-Comprehensive Multi-Object Training System
-Train YOLOv8 for carpets, mats, windows, aquariums, pens, photo frames, microwaves, ceiling fans, table fans
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Comprehensive Trainer
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Comprehensive multi-object training system for custom YOLOv8 models
+- Trains YOLOv8 models on custom datasets for 10+ household objects:
+  carpets, mats, rugs, windows, aquariums, pens, photo frames, 
+  microwaves, ceiling fans, table fans
+- Handles dataset preparation, validation split, and model training
+- Creates proper YAML configuration files for YOLOv8 training
+- Supports transfer learning from pretrained YOLOv8 models
+- Manages training directories and output models
+
+KEY CLASS: ComprehensiveTrainer
+
+KEY FEATURES:
+- Custom object training beyond standard COCO dataset
+- Multiple object classes support
+- Proper dataset structure creation
+- YOLOv8 training pipeline integration
+
+PURPOSE:
+Use this to train custom YOLOv8 models on specific objects that aren't
+in the standard COCO dataset, improving detection accuracy for specialized
+environments.
+
+USAGE:
+    python3 comprehensive_trainer.py
+
+Author: DRDO Project
+===============================================================================
 """
 
 import os

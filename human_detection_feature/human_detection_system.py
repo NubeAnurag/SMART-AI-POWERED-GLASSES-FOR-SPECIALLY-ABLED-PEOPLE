@@ -1,3 +1,51 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Advanced System
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Advanced human detection system with DeepFace integration
+- Face recognition with 128-dimensional encodings
+- Gender classification (Male/Female)
+- Age estimation using DeepFace models
+- Emotion detection (happy, sad, angry, fear, surprise, disgust, neutral)
+- Real-time webcam processing with OpenCV
+- Saves detected faces with timestamps
+- Enhanced display with emotion indicators and metadata
+
+KEY CLASS: HumanDetectionSystem
+
+KEY FEATURES:
+- Multi-attribute recognition: gender, age, emotion, identity
+- DeepFace integration for advanced analysis
+- Automatic face saving with timestamps
+- Comprehensive display with all detected attributes
+- Configurable detection thresholds
+
+KEY METHODS:
+- detect_faces(): Detects faces using Haar cascade
+- recognize_person(): Matches face with known persons database
+- analyze_face(): Performs DeepFace analysis (gender, age, emotion)
+- save_face(): Saves detected face image with metadata
+- display_results(): Shows comprehensive detection results
+
+CONTROLS:
+- 'q': Quit and return to main menu
+- 's': Save current detected face
+- 'h': Show help information
+
+OUTPUTS:
+- Real-time video feed with bounding boxes and labels
+- saved_faces/: Timestamped face images
+- Console output with detection results
+
+This is an advanced version with emotion and gender detection capabilities.
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 import face_recognition

@@ -1,3 +1,38 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Improved Detector
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Improved YOLOv8 object detector with enhanced features
+- Temporal smoothing using frame history (deque)
+- Confidence filtering and thresholding
+- Multiple model size support via command-line arguments
+- Real-time processing with FPS tracking
+- Screenshot capability
+- Text-to-speech integration for detected objects
+
+KEY CLASS: ImprovedObjectDetector
+
+KEY FEATURES:
+- Frame history buffer for temporal smoothing
+- Configurable model sizes and confidence thresholds
+- Enhanced detection stability with frame averaging
+- Better false positive filtering
+
+KEY METHODS:
+- initialize_webcam(): Sets up camera with error handling
+- detect_objects(): Runs YOLO detection with filtering
+- smooth_detections(): Applies temporal smoothing to reduce flickering
+- draw_results(): Visualizes detections on frame
+
+This is an improved version with better stability and fewer false positives.
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 from ultralytics import YOLO

@@ -1,3 +1,41 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Smart Voice System
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Advanced voice-enabled system with speech recognition
+- Voice commands for system control
+- Speech-to-text using speech_recognition library
+- Text-to-speech output with pyttsx3
+- Interactive voice commands (e.g., "add person", "speak info")
+- Dual-mode identification: Face recognition + Voice commands
+- Natural language interaction with the system
+
+KEY CLASS: SmartVoiceHumanDetectionSystem
+
+KEY FEATURES:
+- Voice command recognition
+- Natural language interaction
+- Speech-to-text for commands
+- Text-to-speech for responses
+- Interactive voice-based control
+
+KEY METHODS:
+- listen_for_command(): Recognizes voice commands
+- process_command(): Executes recognized commands
+- speak_response(): Provides audio feedback
+- voice_interaction(): Handles voice-based interactions
+
+PURPOSE:
+This is the most advanced version with full voice interaction capabilities,
+allowing users to control the system using voice commands.
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 import face_recognition

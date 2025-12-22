@@ -1,3 +1,40 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: TEXT OCR RECOGNITION (Feature 1)
+===============================================================================
+This file belongs to the OCR (Optical Character Recognition) feature module.
+
+WORK:
+- Real-time text extraction from camera feed or images
+- Uses dual OCR engines: EasyOCR and Tesseract for better accuracy
+- Supports English and Hindi (Devanagari) text recognition
+- Preprocesses images (grayscale, contrast enhancement, CLAHE)
+- Flags unrecognized characters for quality control
+- Provides side-by-side comparison of both OCR results
+- Text-to-speech output using pyttsx3 with Siri-like male voice
+- Saves OCR output to text file
+- Can work with live camera feed or static image files
+
+KEY FUNCTIONS:
+- preprocess_image(): Enhances image for better OCR accuracy
+- flag_unrecognized(): Identifies characters that may be misread
+- clean_text(): Removes empty lines and noise
+- list_available_cameras(): Scans and lists available camera devices
+
+CONTROLS:
+- SPACE: Capture and process current frame for OCR
+- ESC: Exit OCR feature and return to main menu
+
+OUTPUTS:
+- ocr_output.txt: Text file with OCR results from both engines
+- debug_preprocessed.png: Preprocessed image for debugging
+- Console output with recognized text
+- Audio output via text-to-speech
+
+Author: DRDO Project
+===============================================================================
+"""
 # Python 3.13, OpenCV version will be printed at runtime
 import cv2
 import numpy as np

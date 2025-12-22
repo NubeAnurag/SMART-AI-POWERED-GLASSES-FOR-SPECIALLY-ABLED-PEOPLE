@@ -1,3 +1,28 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: TEXT OCR RECOGNITION (Feature 1) - Model Downloader
+===============================================================================
+This file belongs to the OCR (Optical Character Recognition) feature module.
+
+WORK:
+- Downloads PaddleOCR models for offline use
+- Ensures all required OCR models are available locally
+- Prevents runtime delays by pre-downloading models
+- Creates dummy image and runs prediction to trigger downloads
+- Supports English language OCR models
+
+PURPOSE:
+This utility script should be run once before using OCR features to ensure
+all models are downloaded and cached locally. This improves performance
+and allows offline operation.
+
+USAGE:
+    python3 paddleocr_download_models.py
+
+Author: DRDO Project
+===============================================================================
+"""
 from paddleocr import PaddleOCR
 import numpy as np
 

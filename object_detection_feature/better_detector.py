@@ -1,3 +1,37 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Better Detector
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Enhanced YOLOv8 object detector with better performance
+- Optimized for speed and accuracy balance
+- Improved webcam initialization and error handling
+- Real-time object detection with bounding boxes
+- FPS monitoring and display
+- Text-to-speech announcements for detected objects
+
+KEY CLASS: BetterObjectDetector
+
+KEY FEATURES:
+- Better performance optimization
+- Improved error handling
+- Cleaner code structure
+- Enhanced user experience
+
+KEY METHODS:
+- initialize_webcam(): Robust camera initialization
+- detect_objects(): Optimized detection pipeline
+- draw_detections(): Efficient visualization
+- speak_detections(): TTS output for objects
+
+This version focuses on better performance and cleaner implementation.
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 from ultralytics import YOLO

@@ -1,6 +1,29 @@
 #!/usr/bin/env python3
 """
-Simple Face Recognition System Runner
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Runner Script
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Entry point script to launch the simple face recognition system
+- Provides user-friendly startup messages and instructions
+- Handles import errors gracefully with helpful error messages
+- Runs the SimpleFaceRecognitionSystem main function
+
+PURPOSE:
+This is a convenience wrapper script that makes it easy to start the
+human detection feature independently. It provides clear instructions
+and error handling.
+
+USAGE:
+    python3 run_simple_system.py
+
+This script can be run standalone or is automatically called by the
+unified_drdo_system.py when Feature 2 is selected.
+
+Author: DRDO Project
+===============================================================================
 """
 
 import sys

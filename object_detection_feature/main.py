@@ -1,3 +1,46 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Basic YOLOv8 Detector
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Basic YOLOv8 object detection system using Ultralytics
+- Real-time detection of 80+ COCO dataset objects
+- Uses YOLOv8n (nano) model for fast performance
+- Draws bounding boxes and labels on detected objects
+- Calculates and displays FPS for performance monitoring
+- Text-to-speech output using macOS 'say' command
+- Automatic speech cooldown to prevent audio spam
+- Screenshot saving functionality
+
+KEY CLASS: ObjectDetector
+
+KEY METHODS:
+- initialize_webcam(): Finds and initializes available webcam
+- speak_text(): Uses macOS 'say' command for TTS
+- speak_detections(): Announces detected objects with cooldown
+- draw_detections(): Draws bounding boxes and labels on frame
+- calculate_fps(): Tracks and displays frames per second
+- run(): Main detection loop
+
+CONTROLS:
+- 'q': Quit and return to main menu
+- 's': Save screenshot with timestamp
+- 'p': Manually trigger speech output for current detections
+
+OUTPUTS:
+- Real-time video feed with bounding boxes and labels
+- Console output with detection information
+- Audio announcements of detected objects
+- Screenshot files (screenshot_YYYYMMDD_HHMMSS.jpg)
+
+MODEL: Uses yolov8n.pt (nano model) for balance of speed and accuracy
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 from ultralytics import YOLO

@@ -1,7 +1,39 @@
 #!/usr/bin/env python3
 """
-Data Collection Helper System
-Guide for collecting and organizing data for all 15 objects
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Data Collection Helper
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Helper system for collecting and organizing training data
+- Guides users through collecting images for 15 custom objects:
+  carpet, mat, rug, window, aquarium, pen, photo frame, microwave,
+  ceiling fan, table fan, idol, split AC, window AC, etc.
+- Creates proper directory structure for training datasets
+- Provides instructions and best practices for data collection
+- Helps organize collected images into train/val/test splits
+
+KEY CLASS: DataCollectionHelper
+
+KEY FEATURES:
+- Structured data collection workflow
+- Multiple object category support
+- Dataset organization guidance
+- Training data preparation assistance
+
+PURPOSE:
+This utility helps users collect and organize training data for custom
+object detection models. Use this before training custom models to ensure
+proper data organization.
+
+USAGE:
+    python3 data_collection_helper.py
+
+This ensures training data is properly organized for YOLOv8 training.
+
+Author: DRDO Project
+===============================================================================
 """
 
 import os

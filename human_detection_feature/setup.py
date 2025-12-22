@@ -1,6 +1,35 @@
 #!/usr/bin/env python3
 """
-Setup script for Human Detection and Identification System
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Setup Script
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Automated setup script for the human detection feature
+- Installs all required dependencies from requirements.txt
+- Checks for critical packages: OpenCV, face_recognition, dlib, DeepFace
+- Creates necessary directories (known_faces, logs, saved_faces)
+- Verifies all dependencies can be imported successfully
+- Provides helpful setup instructions and feature overview
+
+PURPOSE:
+This script should be run once before using the human detection feature
+to ensure all dependencies are installed and directories are created.
+
+FUNCTIONS:
+- install_requirements(): Installs packages from requirements.txt
+- check_dependencies(): Verifies all required packages are available
+- create_directories(): Creates necessary folder structure
+
+USAGE:
+    python3 setup.py
+
+This ensures the human detection system is ready to use with all dependencies
+properly installed.
+
+Author: DRDO Project
+===============================================================================
 """
 
 import subprocess

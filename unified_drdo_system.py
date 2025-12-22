@@ -1,9 +1,38 @@
 #!/usr/bin/env python3
 """
-Unified DRDO System - Combining all three features:
-1. OCR Text Recognition
-2. Human Detection and Identification
-3. Object/Environment Analysis (YOLOv8)
+===============================================================================
+FEATURE: UNIFIED DRDO SYSTEM (Main Program)
+===============================================================================
+This is the main entry point that combines all three DRDO features into a 
+single menu-driven application.
+
+FEATURES INTEGRATED:
+1. OCR Text Recognition (Feature 1)
+   - Extract text from images/video using EasyOCR and Tesseract
+   - Supports English and Hindi (Devanagari) text recognition
+   
+2. Human Detection and Identification (Feature 2)
+   - Face recognition system with 128-dimensional encodings
+   - Multi-angle face registration (front, left, right)
+   - Natural voice feedback with person information
+   
+3. Object/Environment Analysis (Feature 3)
+   - YOLOv8-based object detection
+   - Real-time detection of 15+ household and office objects
+   - Audio feedback for detected objects
+
+WORK:
+- Provides a switch-case menu system (cases 1, 2, 3)
+- Manages directory changes for each feature
+- Handles proper cleanup of OpenCV windows between features
+- Error handling and graceful return to main menu after each feature
+- Exit conditions: Case 0 exits program, ESC/'q' keys exit from features
+
+USAGE:
+    python3 unified_drdo_system.py
+
+Author: DRDO Project
+===============================================================================
 """
 
 import sys

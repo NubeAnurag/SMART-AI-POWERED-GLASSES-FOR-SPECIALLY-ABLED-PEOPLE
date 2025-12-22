@@ -1,3 +1,30 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: TEXT OCR RECOGNITION (Feature 1) - TTS Variant
+===============================================================================
+This file belongs to the OCR (Optical Character Recognition) feature module.
+
+WORK:
+- Alternative OCR implementation with enhanced Text-to-Speech integration
+- Uses Photo Booth integration for better image capture on macOS
+- Combines EasyOCR and Tesseract for dual-engine text recognition
+- Enhanced TTS (Text-to-Speech) output with voice configuration
+- GUI-based interface using tkinter for better user interaction
+- Handles Photo Booth process management for seamless image capture
+
+KEY FEATURES:
+- Photo Booth integration for high-quality image capture
+- Enhanced TTS voice selection and configuration
+- GUI dialog boxes for user interaction
+- Process management to handle Photo Booth lifecycle
+
+This is an alternative implementation focusing on TTS enhancement and
+Photo Booth integration, particularly useful for macOS systems.
+
+Author: DRDO Project
+===============================================================================
+"""
 import tkinter as tk
 from tkinter import messagebox
 import cv2

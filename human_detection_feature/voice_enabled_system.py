@@ -1,3 +1,40 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Voice Enabled System
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Voice-enabled human detection system with audio recording
+- Records voice samples for each recognized person
+- Stores voice mappings for personalized audio recognition
+- Face recognition with voice profile association
+- Real-time voice recording and playback
+- PyAudio integration for audio processing
+- Voice-based person identification in addition to face recognition
+
+KEY CLASS: VoiceEnabledHumanDetectionSystem
+
+KEY FEATURES:
+- Dual identification: Face + Voice recognition
+- Voice profile storage and playback
+- Audio recording with timestamp
+- Voice-person mapping database
+
+KEY METHODS:
+- record_voice(): Records voice sample for a person
+- play_voice(): Plays back recorded voice sample
+- save_voice_mapping(): Stores voice-person associations
+- load_voice_mappings(): Loads stored voice profiles
+
+PURPOSE:
+This version adds voice recording and playback capabilities, allowing the
+system to store and recognize people by both face and voice.
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 import face_recognition

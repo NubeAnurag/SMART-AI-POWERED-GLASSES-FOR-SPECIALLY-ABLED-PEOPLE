@@ -1,3 +1,43 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2)
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Main face recognition system for identifying and recognizing people
+- Uses face_recognition library with 128-dimensional face encodings
+- Multi-angle face registration (front, left, right photos)
+- Stores person information: name, age, relationship
+- Real-time face detection from camera feed
+- Recognizes known persons and displays their information
+- Text-to-speech output using pyttsx3 with English Siri-like male voice
+- Saves face encodings and person data to pickle files
+
+KEY CLASS: SimpleFaceRecognitionSystem
+
+KEY METHODS:
+- add_person_manually(): Add new person with photos and information
+- detect_human(): Detect if there's a human face in the frame
+- recognize_person(): Match face encoding with known faces database
+- speak_person_info(): Announce recognized person's details via TTS
+- start_detection(): Main loop for real-time face recognition
+
+CONTROLS:
+- 'a': Add a new person (takes 3 photos + input info)
+- 'p': Speak information about recognized person
+- 'q': Exit feature and return to main menu
+- 'h': Show help information
+
+STORAGE:
+- known_faces/: Stores face encodings (encodings.pkl)
+- person_photos/: Stores registered person photos
+- known_faces/person_info.pkl: Stores person metadata
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 import face_recognition

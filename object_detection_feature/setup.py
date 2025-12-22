@@ -1,6 +1,37 @@
 #!/usr/bin/env python3
 """
-Setup script for YOLO Object Detection Project
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Setup Script
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Automated setup script for the object detection feature
+- Checks Python version compatibility (requires 3.8+)
+- Installs all required dependencies from requirements.txt
+- Tests imports of critical libraries (OpenCV, NumPy, Ultralytics, PyTorch)
+- Downloads YOLOv8 model file on first run
+- Tests webcam accessibility and permissions
+- Provides helpful error messages and troubleshooting tips
+
+PURPOSE:
+This script should be run once before using the object detection feature
+to ensure all dependencies are installed and the system is properly configured.
+
+FUNCTIONS:
+- check_python_version(): Verifies Python 3.8+ is installed
+- install_requirements(): Installs packages from requirements.txt
+- test_imports(): Verifies all critical libraries can be imported
+- check_webcam(): Tests camera access and permissions
+- download_yolo_model(): Downloads yolov8n.pt model file
+
+USAGE:
+    python3 setup.py
+
+This ensures a smooth first-run experience for the object detection feature.
+
+Author: DRDO Project
+===============================================================================
 """
 
 import subprocess

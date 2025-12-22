@@ -1,6 +1,30 @@
 #!/usr/bin/env python3
 """
-Debug Face Recognition System
+===============================================================================
+FEATURE: HUMAN DETECTION AND IDENTIFICATION (Feature 2) - Debug Tool
+===============================================================================
+This file belongs to the Human Detection and Identification feature module.
+
+WORK:
+- Debugging utility for face recognition system
+- Tests face encoding generation and matching
+- Validates face recognition accuracy
+- Helps diagnose issues with face encodings
+- Compares face encodings from different photos
+- Useful for troubleshooting recognition problems
+
+PURPOSE:
+This is a diagnostic tool used during development and troubleshooting to
+verify that face encodings are being generated correctly and matching
+properly.
+
+USAGE:
+    python3 debug_recognition.py
+
+This tool helps identify and fix issues with face recognition accuracy.
+
+Author: DRDO Project
+===============================================================================
 """
 
 import cv2

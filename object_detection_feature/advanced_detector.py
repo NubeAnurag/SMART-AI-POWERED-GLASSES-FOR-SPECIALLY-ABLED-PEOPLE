@@ -1,3 +1,46 @@
+#!/usr/bin/env python3
+"""
+===============================================================================
+FEATURE: OBJECT/ENVIRONMENT ANALYSIS (Feature 3) - Advanced Detector
+===============================================================================
+This file belongs to the Object Detection and Environment Analysis feature module.
+
+WORK:
+- Advanced YOLOv8 object detector with configurable model sizes
+- Command-line argument support for customization
+- Multiple model size options (nano, small, medium, large, xlarge)
+- Configurable confidence thresholds
+- Real-time webcam processing with performance metrics
+- Bounding box visualization with confidence scores
+- FPS calculation and display
+
+KEY CLASS: AdvancedObjectDetector
+
+KEY FEATURES:
+- Flexible model selection based on speed/accuracy needs
+- Command-line interface for easy configuration
+- Performance monitoring with FPS tracking
+- Customizable detection thresholds
+
+KEY METHODS:
+- load_model(): Loads YOLOv8 model of specified size
+- detect_objects(): Runs object detection on frame
+- draw_detections(): Visualizes detections with bounding boxes
+- calculate_fps(): Tracks processing speed
+
+COMMAND-LINE USAGE:
+    python advanced_detector.py --model s --confidence 0.5 --webcam 0
+
+ARGUMENTS:
+- --model: YOLO model size (n, s, m, l, x)
+- --confidence: Detection confidence threshold (0.0-1.0)
+- --webcam: Webcam device index
+
+This version provides more control and customization options.
+
+Author: DRDO Project
+===============================================================================
+"""
 import cv2
 import numpy as np
 from ultralytics import YOLO
