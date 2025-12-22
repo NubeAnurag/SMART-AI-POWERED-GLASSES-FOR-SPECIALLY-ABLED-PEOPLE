@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+paddleocr_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Model files (too large for git, user should download separately)
+*.pt
+*.pth
+*.h5
+*.pkl
+!known_faces/*.pkl
+
+# Temporary files
+temp_*
+debug_*.png
+*.tmp
+
+# Output files
+ocr_output.txt
+screenshot_*.jpg
+
+# Audio files
+*.wav
+
+# Dataset folders (can be large)
+*_dataset/
+*_dataset/**
+
